@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f4f6;
+}
+
+header h1.animado {
+    animation: bienvenida 2s ease-in-out infinite alternate;
+}
+
+@keyframes bienvenida {
+    from { color: #333; }
+    to { color: #0073e6; }
+}
+
+.imagen-movimiento {
+    width: 100px;
+    margin: 10px;
+    animation: mover 3s linear infinite;
+}
+
+@keyframes mover {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+    background-color: #005bb5;
+}
+
+.boton:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.imagen-auto img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.imagen-auto img:hover {
+    transform: scale(1.1);
+}
